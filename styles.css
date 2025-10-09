@@ -37,6 +37,14 @@ header {
     justify-content: space-evenly;
 }
 
+header a:hover {
+    opacity: 0.8;
+}
+
+header a {
+    cursor: pointer;
+}
+
 #header-logo {
     display: flex;
     margin-right: auto;
@@ -58,6 +66,7 @@ nav a:hover {
 nav a {
     cursor: pointer;
 }
+
 
 .name-container {
     display: flex;
@@ -89,4 +98,12 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.media-container a:hover {
+    opacity: 0.8;
+}
+
+.media-container a {
+    cursor: pointer;
 }
