@@ -14,10 +14,10 @@
     <header>
         <a><img id="header-logo" src="./images/portfolio_logo_black.png"/></a>
         <nav>
-            <a><i class="fa-solid fa-house fa-xl" style="color: #151515c9;"></i></a>
-            <a><i class="fa-solid fa-address-card fa-xl" style="color: #151515c9;"></i></a>
-            <a><i class="fa-solid fa-briefcase fa-xl" style="color: #151515c9;"></i></a>
-            <a><i class="fa-solid fa-diagram-project fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/" data-link><i class="fa-solid fa-house fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/about" data-link><i class="fa-solid fa-address-card fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/experience" data-link><i class="fa-solid fa-briefcase fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/projects" data-link><i class="fa-solid fa-diagram-project fa-xl" style="color: #151515c9;"></i></a>
         </nav>
     </header> 
     <main>
@@ -111,3 +111,12 @@ JavaScript ES6, Stimulus.js, SQL, Git, GitHub, Heroku and Ruby on Rails.</p>
     </main>
 </body>
 </html>
+
+<script>
+    document.addEventListener('click', e => {
+        if (e.target.matches('[data-link]')) {
+        e.preventDefault();
+        console.log('clicked');
+        };
+    });
+</script>
