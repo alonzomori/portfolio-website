@@ -14,10 +14,10 @@
     <header>
         <a><img id="header-logo" src="./images/portfolio_logo_black.png"/></a>
         <nav>
-            <a href="/" data-link><i class="fa-solid fa-house fa-xl" style="color: #151515c9;"></i></a>
-            <a href="/about" data-link><i class="fa-solid fa-address-card fa-xl" style="color: #151515c9;"></i></a>
-            <a href="/experience" data-link><i class="fa-solid fa-briefcase fa-xl" style="color: #151515c9;"></i></a>
-            <a href="/projects" data-link><i class="fa-solid fa-diagram-project fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/" onclick="route()"><i class="fa-solid fa-house fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/about" onclick="route()"><i class="fa-solid fa-address-card fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/experience" onclick="route()"><i class="fa-solid fa-briefcase fa-xl" style="color: #151515c9;"></i></a>
+            <a href="/projects" onclick="route()"><i class="fa-solid fa-diagram-project fa-xl" style="color: #151515c9;"></i></a>
         </nav>
     </header> 
     <main>
@@ -37,11 +37,11 @@
     </div>
 
     <div class="media-container">
-        <div><a><i class="fa-brands fa-linkedin fa-2xl" style="color: #c0c0c0;"></i></a>
+        <div><a data-link><i class="fa-brands fa-linkedin fa-2xl" style="color: #c0c0c0;"></i></a>
         </div>
-        <div><a><i class="fa-brands fa-github fa-2xl" style="color: #c0c0c0;"></i></a>
+        <div><a data-link><i class="fa-brands fa-github fa-2xl" style="color: #c0c0c0;"></i></a>
         </div>
-        <div><a><i class="fa-brands fa-youtube fa-2xl" style="color: #c0c0c0;"></i></a>
+        <div><a data-link><i class="fa-brands fa-youtube fa-2xl" style="color: #c0c0c0;"></i></a>
         </div>
     </div>
 
@@ -109,14 +109,6 @@ JavaScript ES6, Stimulus.js, SQL, Git, GitHub, Heroku and Ruby on Rails.</p>
     </div>
     </div>
     </main>
+    <script src="js/router.js"></script>
 </body>
 </html>
-
-<script>
-    document.addEventListener('click', e => {
-        if (e.target.matches('[data-link]')) {
-        e.preventDefault();
-        console.log('clicked');
-        };
-    });
-</script>
