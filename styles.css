@@ -37,6 +37,16 @@ header {
     justify-content: space-between;
 }
 
+header nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 header a:hover {
     opacity: 0.8;
 }
@@ -51,11 +61,20 @@ header a {
     max-width: 70px;
 }
 
+#logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 nav {
     color: var(--secondary-color);
     display: flex;
     justify-content: end;
-    align-items: flex-end;
+    align-items: center;
     gap: 50px;
 }
 
@@ -94,9 +113,24 @@ main {
 }
 
 .media-container {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     gap: 20px;
+}
+
+.media-container a {
+    display: inline-flex;           /* Makes the link a flexbox */
+    align-items: center;            /* Center the icon vertically */
+    justify-content: center;        /* Center it horizontally */
+    width: 60px;                    /* Give a solid clickable area */
+    height: 20px;
+    text-decoration: none;          /* Remove underline */
+    border-radius: 50%;             /* Circle shape (optional) */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+    z-index: 10;
+
 }
 
 .media-container a:hover {
