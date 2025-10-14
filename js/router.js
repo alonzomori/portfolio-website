@@ -32,4 +32,5 @@ const handleLocation = async() => {
 window.onpopstate = handleLocation;
 window.route = route;
 
+document.addEventListener("click", route);
 handleLocation();
