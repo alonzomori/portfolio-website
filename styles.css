@@ -196,6 +196,13 @@ main {
     margin-bottom: 15px;
 }
 
+
+.vegii-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 p a {
     text-decoration: none;
     color: var(--secondary-color);
