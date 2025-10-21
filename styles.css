@@ -219,9 +219,14 @@ p img {
 .aboutme-pictures {
     display: block;
     margin: 0 auto;
+
     filter: grayscale(100%);
 }
 
 .aboutme-text {
     text-align: left;
+}
+
+h4 {
+    padding-bottom: 10px;
 }
