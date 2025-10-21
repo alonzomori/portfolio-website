@@ -30,8 +30,8 @@ const handleLocation = async() => {     // Next, we store an async function in o
     // We retrieve the html element that has the id "main-page" and inject the fetched html into that part of the page. 
 }
 
-// window.onpopstate = handleLocation;
-// window.route = route;
+window.onpopstate = handleLocation;
+window.route = route;
 
-// document.addEventListener("click", route);
+document.addEventListener("click", route);
 handleLocation();
