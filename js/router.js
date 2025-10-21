@@ -14,6 +14,7 @@ const route = (event) => { // We define a variable called "route" which we pass 
     const routes = {
         404: "/pages/404.html",
         "/": "/pages/home.html",
+        "/index.html": "/pages/home.html",
         "/about": "/pages/about.html",
         "/experience": "/pages/experience.html",
         "/projects": "/pages/projects.html",
