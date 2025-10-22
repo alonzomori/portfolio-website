@@ -103,7 +103,7 @@ nav a {
     overflow: hidden;
     align-items: center;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
-    border: rgba(192, 192, 192, 0.455) 5px solid;
+    border: rgb(255, 255, 255) 3px solid;
 }
 
 main {
@@ -254,7 +254,7 @@ p img {
     display: block;
     margin: 0 auto;
     border-radius: 100%;
-
+    border: rgb(255, 255, 255) 2px solid;
     filter: grayscale(100%);
 }
 
@@ -268,12 +268,27 @@ h4 {
 
 #vegii {
     border-radius: 30px;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+#vegii-spacing {
+    padding-top: 5px;
 }
 
 #mondainai {
-   border-radius: 30px; 
+   border-radius: 30px;
+   border: rgb(255, 255, 255) 2px solid; 
+}
+
+#mondainai-spacing {
+    padding-top: 10px;
 }
 
 #projectsenpai {
    border-radius: 30px;
+   border: rgb(255, 255, 255) 2px solid;
+}
+
+#projectsenpai-spacing {
+    padding-top: 10px;
 }
